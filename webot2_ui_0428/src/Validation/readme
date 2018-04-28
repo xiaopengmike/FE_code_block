@@ -1,0 +1,19 @@
+验证设置格式：
+key:{
+	required:number,																	//0,1,2,3,4...
+	type:'',																			//'string','number','array','array_repeat'(重复的数组项),'object','mobile','url','email'
+	name:'', 																			//报错信息里会包含这个name
+	RegExp:"[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？%+_]",    //一般是字符类型才需要这个正则去匹配
+	RegExp_err:'不能包含特殊字符',															//正则匹配不成功时的报错信息
+	child:{   																			//当该key为数组时，且数组每项不一样又较为复杂时用（数组项也是key类似设置）
+	},
+	property:{              															//当该key为对象时
+	},
+	
+}
+
+
+一些特殊的属性：
+type为'array_repeat'时
+type_arr:''  										//这个是类型为'array_repeat'时，定义每个数组项的类型
+required:,											//需要多少的的意思

@@ -1,0 +1,248 @@
+@import "color";
+
+@mixin scrollbar(){
+    &::-webkit-scrollbar-button {display:none;}
+    &::-webkit-scrollbar-thumb {width:8px; background:#333; border-radius:4px;}
+    &::-webkit-scrollbar-track {width:8px; background:#ccc; border-radius:4px;}
+    &::-webkit-scrollbar {width:8px;}
+}
+
+
+/*修改element-ui 默认*/
+
+$popperColor:#585e6b;
+$popover-arrows:(bottom,top,right,left);
+$popover-widths:(400,300,250);
+//.el-popover{
+//  min-width:auto !important;
+//  &>*:first-child {
+//      max-height:400px;
+//      overflow-x:visible;
+//      overflow-y: auto;
+//  }
+//  //主题色
+//  &.html{
+//      padding:10px 0 !important;
+//      & > div:first-child{
+//          padding:0 10px;
+//          img {max-width:100% !important;}
+//      }
+//  }
+//  &.black {
+//      color:#fff;
+//      *:not(.keyt),*:not(.special),*:not(.accessory) {line-height:18px; font-size:12px !important; font-weight:normal !important; color:#fff !important; }
+//      .accessory {color:#ccc; margin-top:12px;}
+//      .keyt {
+//          color:#f5a100  !important;
+//      }
+//
+//      background:rgba($popperColor,.9) !important; border:none !important;
+//      @each $arrow in $popover-arrows {
+//          &[x-placement^=#{$arrow}] {
+//              .popper__arrow,.popper__arrow:after {
+//                   border-#{$arrow}-color:rgba($popperColor,.68) !important;
+//              }
+//          }
+//      }
+//  }
+//  //宽
+//  @each $width in $popover-widths {
+//      &.w#{$width} {
+//          max-width:$width+'px';
+//      }
+//  }
+//  & > * {
+//      word-break: break-all;
+//  }
+//}
+.el-tooltip__popper,.el-popover {max-width:400px;}
+.el-tooltip__popper,.el-popover{
+    img {max-width:100% !important;}
+    //引用自定义滚动条后的add
+    & > ._custom-scrollbar_ {
+        padding:0 10px;
+    }
+    & > .h500{
+        max-height:400px;
+    }
+    //引用自定义滚动条后的
+    &>*:first-child {
+        max-height:400px;
+        overflow-x:visible;
+        overflow-y: auto;
+        @include scrollbar();
+    }
+    //主题色
+    &.html{
+        padding:10px 0  !important;
+        & > div:first-child{
+            
+            padding:0px 10px;
+        }
+    }
+    &.black {
+        color:#fff;
+        *:not(.keyt),*:not(.special),*:not(.accessory) {line-height:18px; font-size:12px !important; font-weight:normal !important; color:#fff !important; }
+        .accessory {color:#ccc !important; margin-top:5px;}
+        
+        .keyt {
+            color:#f5a100 !important;
+        }
+
+        background:rgba($popperColor,.9) !important; border:none !important;
+        @each $arrow in $popover-arrows {
+            &[x-placement^=#{$arrow}] {
+                .popper__arrow,.popper__arrow:after {
+                     border-#{$arrow}-color:rgba($popperColor,.8) !important;
+                }
+            }
+        }
+    }
+    //宽
+    @each $width in $popover-widths {
+        &.w#{$width} {
+            max-width: #{$width+'px'};
+        }
+    }
+    & > * {
+        word-break: break-all;
+    }
+    ul,ol{
+        padding-left:13px;
+    }
+    ul {list-style:decimal;}
+    ol {list-style:circle;}
+}
+
+.el-date-editor .el-input__inner {
+    font-weight:normal !important;
+    border-color:#e7f2f7;
+}
+
+
+
+
+
+/*Bootstrap*/
+/*.breakFirstCol {
+    .col-md-4,.col-md-3,.col-md-6,
+    .col-sm-12,.col-sm-6 {
+        &:first-child{padding-left:0 !important;}
+    }
+}*/
+
+//ivu
+//图标
+.ivu-icon-load-c {
+    animation: fa-spin 2s infinite linear;
+}
+
+//日期选择
+
+
+.ivu-date-picker {
+    font-weight:normal;
+}
+.ivu-picker-panel-body-wrapper {
+    font-size:12px;
+    font-weight:normal;
+}
+.ivu-select {
+    position:relative;
+}
+//分页
+$my_pagination-height:26px;
+.my_pagination,.ivu-page{
+    font-size:0;
+    .ivu-page-prev,
+    .ivu-page-next,
+    .ivu-page-item,
+    .ivu-page-item-jump-next, .ivu-page-item-jump-prev, .ivu-page-next, .ivu-page-prev
+     {
+        line-height:$my_pagination-height;
+        height:$my_pagination-height;
+        min-width:$my_pagination-height;
+        overflow:hidden;
+        &:after {
+            height:100%;
+            width:100%;
+            color:#ccc;
+            font-size:12px;
+            line-height:$my_pagination-height;
+        }
+        a{
+            font-size:12px;
+            line-height:$my_pagination-height;
+            margin:0;padding:0;
+        }
+    }
+//  .ivu-page-item-jump-next, .ivu-page-item-jump-prev {
+//      i {display:block;}
+//  }
+    .ivu-page-options-elevator{
+        font-size:12px;
+        input {
+            height:$my_pagination-height;
+        }
+    }
+}
+
+
+
+.my_pagination.el-pagination {
+    .el-pagination__total,.el-pagination__jump,button,.el-pager li,.el-pagination__editor{
+        line-height:#{$my_pagination-height - 2px};
+        height:#{$my_pagination-height - 2px};
+        font-size:12px;
+    }
+    button,.el-pager li{
+        margin:0 3px;
+        padding:0 3px;
+        border-left:1px;
+        border-right:1px;
+        border-color:#dddee1;
+        border-style:solid;
+        border-radius:6px;
+        min-width:#{$my_pagination-height - 2px};
+        &.active {border-color:#20a0ff;}
+    }
+    .el-pager li {
+        padding:0 2px;
+    }
+}
+
+
+
+//按键
+
+//form
+.small_modals.el-form {
+    padding-top:10px;
+    label {
+        float:none;
+        text-align:left;
+        padding:0;
+    }
+}
+.btn{
+    &.btn-info {
+        background-color: #0f86ff;
+        border-color: #0f86ff;
+    }
+}
+
+//element-ui 
+//日期选择组件bug
+.el-date-range-picker.has-sidebar{
+    border:none;
+    .el-picker-panel__body-wrapper{
+        margin-left:-8px !important;
+       // border:1px solid #d1dbe5;
+        .el-picker-panel__sidebar{
+            border:1px solid #e4e4e4;
+        }
+        .el-picker-panel__body{
+            border-top:1px solid #e4e4e4;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+export default {
+	question:{
+		required:1,
+		type:'string',
+		name:'标准问题',
+	},
+	/*similar_word:{
+		required:0,
+		type:'array',
+		type_arr:'string',
+		RegExp:"[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？%+_]",
+		RegExp_err:'不能包含特殊字符',
+		name:'相似词',
+	}*/
+	answer:{
+		required:1,
+		type:'array_repeat',
+		type_arr:'string',
+		name:'标准回答'
+	},
+	activity:{
+		required:1,
+		type:'number',
+		name:'分类'
+	}
+}

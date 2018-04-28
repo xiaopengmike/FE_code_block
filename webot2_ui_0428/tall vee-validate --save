@@ -1,0 +1,557 @@
+[33mcommit 03e6152fde791398f3de00655858fa4ecb11c0ed[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 24 18:09:09 2017 +0800
+
+    h5网站接口对接
+
+[33mcommit 16b34b59eb100414c7f278b92a2b79a05b3ff6b8[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 24 16:26:15 2017 +0800
+
+    新增公司设置页面
+
+[33mcommit 130f5084fc50079221643866d4b76a8619a5415e[m
+Author: xuwei <weixu@webot.co>
+Date:   Tue Aug 22 10:03:04 2017 +0800
+
+    修改上传图片的api
+
+[33mcommit 2081da4f289a131ce969b1a074e6e58c7ba6b89d[m
+Author: xuwei <weixu@webot.co>
+Date:   Mon Aug 21 15:53:04 2017 +0800
+
+    上传dist
+
+[33mcommit bf7cef84806c40f9b732463e30428cadd00e17a7[m
+Merge: 6872f28 9205bca
+Author: xuwei <weixu@webot.co>
+Date:   Mon Aug 21 14:55:36 2017 +0800
+
+    Merge branch 'dev' into develop
+
+[33mcommit 9205bca7606945dc3795a8c9d3a921b707fb150d[m
+Author: xuwei <weixu@webot.co>
+Date:   Mon Aug 21 14:54:53 2017 +0800
+
+    添加星座及添加常用模板
+
+[33mcommit 6872f288218a11df422b6194925d07d2a79e84f7[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon Aug 21 14:54:38 2017 +0800
+
+    .
+
+[33mcommit d94938bb11f1364129e530b988b0a3c0c2015826[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon Aug 21 10:35:07 2017 +0800
+
+    权限部分优化，url加上api
+
+[33mcommit 4af248695ee3ef0c83a623c115ca203a9d22fef8[m
+Author: xuwei <weixu@webot.co>
+Date:   Fri Aug 18 18:43:31 2017 +0800
+
+    修改部分样式
+
+[33mcommit 5d0dd7df99b3f2242c80f972bace156bdd0e2859[m
+Merge: e503db5 2c1a6f7
+Author: xuwei <weixu@webot.co>
+Date:   Fri Aug 18 18:29:26 2017 +0800
+
+    合并前端代码
+
+[33mcommit 2c1a6f7e3995713db81a876c1257fef88d89269a[m
+Author: xuwei <weixu@webot.co>
+Date:   Fri Aug 18 18:22:56 2017 +0800
+
+    增加日志信息
+
+[33mcommit e503db5d802c18db9cd8ad625ac62c1f05972d35[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Aug 18 18:13:01 2017 +0800
+
+    url配置+问题选择组件
+
+[33mcommit 0361b357364f5a4400c25d31b1b06b163e15949c[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Aug 18 16:13:26 2017 +0800
+
+    快捷回复+tree
+
+[33mcommit 4f39fae31b56596d5228bfc0845c930391b0b66e[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 17 21:59:38 2017 +0800
+
+    新增在线服务设置的页面及数据对接(基础设置,统计设置,留言设置)
+    新增公司运营界面
+
+[33mcommit f31d623aff16a8609e03ceb91b2a26453105fb11[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 17 16:58:41 2017 +0800
+
+    新增在线服务设置(基础设置,统计设置,留言设置)
+
+[33mcommit 27c1e004eb639d793a53aa9b33d750f5de9ee14e[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Aug 17 11:30:40 2017 +0800
+
+    一级导航优化
+
+[33mcommit 816b1a6bdd51f3b09239ad8c8eed638490b6c81b[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Aug 17 11:26:47 2017 +0800
+
+    一级导航优化
+
+[33mcommit 9a560ffc248a22d5bf2b680d22473f475fa1d9a2[m
+Merge: 6296b98 5924a91
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 17 10:45:20 2017 +0800
+
+    Merge branch 'develop' of 192.168.3.101:jianglinlin/data-admin-ui into develop
+
+[33mcommit 6296b98e2e5cc26d55f2431a17e15151616fafdc[m
+Merge: 0ffa6e5 68666f5
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 17 10:43:49 2017 +0800
+
+    解决冲突
+
+[33mcommit 5924a914c655b5d466b9ca5283966a6afa255b07[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Aug 17 10:38:41 2017 +0800
+
+    自定义滚动条优化
+
+[33mcommit 0ffa6e5a132e54fc9f6b6a5d04001687b3ea162f[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 17 10:37:20 2017 +0800
+
+    设置模块差在线服务设置和快捷回复设置
+
+[33mcommit b42f9776727f4ca1a52923818c132f23dbe0dcac[m
+Author: xuwei <weixu@webot.co>
+Date:   Tue Aug 15 20:38:22 2017 +0800
+
+    完成对接设置及机器人设置的页面及数据对接, 修改重新修改左栏导航的设置等
+
+[33mcommit 7e34c1d651b7939fc1663aa1f381599566e961fb[m
+Author: xuwei <weixu@webot.co>
+Date:   Mon Aug 14 19:54:00 2017 +0800
+
+    1.编写权限设置的代码,2.新增设置中接入模块
+
+[33mcommit df878fa43c65cb8d92b00f13082053b79b9aff9a[m
+Author: xuwei <weixu@webot.co>
+Date:   Mon Aug 14 10:15:40 2017 +0800
+
+    设置角色开发中
+
+[33mcommit d74859de3d7893ed140e01e37f26a59c4d1d51dd[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 10 20:10:36 2017 +0800
+
+    用户管理用户模块和分组模块
+
+[33mcommit 68666f582356ae8b3a2cf3eca0b36f360c2e7d31[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 10 20:10:36 2017 +0800
+
+    开发中
+
+[33mcommit 6f1b1afb2f444758540127e29fa172b01491c02e[m
+Author: xuwei <weixu@webot.co>
+Date:   Thu Aug 10 14:38:34 2017 +0800
+
+    重定向站点
+
+[33mcommit a7b7ff68372174d6c7db5f6477451c87189fdd6c[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Aug 10 10:25:15 2017 +0800
+
+    退出登录同时也下线
+
+[33mcommit 8dc14d326d9b8f1191b72c581c5db811ac01d2f9[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Aug 8 09:21:22 2017 +0800
+
+    登出系统客服离线问题
+
+[33mcommit 4e7d9b2b2eb76da52ee82a270e50eb91b638fb30[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon Aug 7 14:57:56 2017 +0800
+
+    08-07
+
+[33mcommit 1617cb99dab0adae4e6451154a815b77d74fb4ff[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Jul 27 17:28:26 2017 +0800
+
+    1
+
+[33mcommit 075cdd37d09fd5b5958e6093be34f68c0c88fddb[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Jul 27 17:14:31 2017 +0800
+
+    关于结束服务的判断
+
+[33mcommit 38607f990c22a1a9f5dfc993b91450ee1ca3d2d9[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Jul 27 16:22:00 2017 +0800
+
+    离线不能结束服务
+
+[33mcommit d77ee9f6217fdac7429317b221a086b7ed03e971[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Jul 27 16:15:28 2017 +0800
+
+    客服状态改变刷新列表+离线状态不能发送信息
+
+[33mcommit f1386a4c8a634071e6eac7901d8cd22e597f008b[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Jul 27 15:39:01 2017 +0800
+
+    部分样式修改2
+
+[33mcommit 999bbc5c227bd45f0515008baa954c2888ab12e8[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Jul 27 15:21:44 2017 +0800
+
+    部分样式修改
+
+[33mcommit adca72b4dcacbb7cbdfbe24e4e078229f40af7eb[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Jul 27 13:49:48 2017 +0800
+
+    历史会话bug
+
+[33mcommit e2d406bac21dc16895077c4a56d2e1063f21459c[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Jul 26 20:50:07 2017 +0800
+
+    bug修复--网页基本骨架修改
+
+[33mcommit 5e46d80dd69b74360d671f7e12ae2d911e50cac6[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Jul 26 20:49:45 2017 +0800
+
+    bug修复--网页基本骨架修改
+
+[33mcommit 12483ffaddbec21139b2e7acbf5051ff3d1910ad[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Jul 26 20:46:58 2017 +0800
+
+    bug修复--网页基本骨架修改
+
+[33mcommit 399c4ddd3cf0c507910610788c2c27929cbdc220[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Jul 26 19:07:04 2017 +0800
+
+    历史会话
+
+[33mcommit 18588b99f7a0d180da940402e6df84dceb4651b4[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Jul 26 19:06:27 2017 +0800
+
+    历史会话
+
+[33mcommit 97a835bdde00dc9cfe405fb93fbe68faa78d0a32[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Sat Jul 22 19:05:56 2017 +0800
+
+    聊天+信息状态
+
+[33mcommit 7b4d24c1e4c1094be0e9693f2e8a8ffe442da9d9[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Jul 18 19:17:35 2017 +0800
+
+    富文本问题1
+
+[33mcommit c4601b9c0078d16019be09303d073f692b49bad8[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Jul 18 19:08:11 2017 +0800
+
+    富文本问题
+
+[33mcommit 93a0d8c814e28604f0bc2e90935411c932d10ffc[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Jul 18 18:11:07 2017 +0800
+
+    换音效
+
+[33mcommit 7acfeefa059f7532bdc2b2ace1a6bbc4e632f337[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Jul 18 15:42:24 2017 +0800
+
+    智能客服平台v1
+
+[33mcommit 2dc670174c37dfb0bfa858078a03ce1fc117144a[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Jul 18 13:42:59 2017 +0800
+
+    客服工作台
+
+[33mcommit 53719a87dd9f6a35546e5c3719741090505edd4f[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon Jun 12 18:25:38 2017 +0800
+
+    图标显示优化
+
+[33mcommit 93d858d0755319779906f423aad9ec91f69b933e[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Jun 9 14:56:59 2017 +0800
+
+    重新打包
+
+[33mcommit 73a6e5e1571f06ad330db3af5ee365f3994c9e8b[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Jun 7 10:24:33 2017 +0800
+
+    优化首页显示，修改页头为-‘智‘--智言数据管理平台
+
+[33mcommit 5a0a426f632b8f1c7aa030b01982e00bfee85637[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu May 25 16:21:50 2017 +0800
+
+    上传问题及logo修改
+
+[33mcommit 72a2f5d3b5c12ffe3f976e7771e4d4e78209b420[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed May 24 14:22:54 2017 +0800
+
+    兼容性解决方案
+
+[33mcommit 20ffdd16bfe74412c46f9d7c2b1c83ceb11aa7a7[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed May 10 14:06:18 2017 +0800
+
+    打包
+
+[33mcommit 121da3092d7a40cbbe8f1ed6736f782bab562c5a[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue May 9 10:52:08 2017 +0800
+
+    数据备份数据展示、知识库禁止功能权限、限制全局渲染（加载完数据再渲染）
+
+[33mcommit 54b5881cb20de98214bfddb7f5b5261e77663107[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon May 8 18:11:44 2017 +0800
+
+    系统日志-拆分回收站，添加搜索和排解功能
+
+[33mcommit 9b089b20230fcbae2a88a40a9c48ac1d7b76730e[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon May 8 16:07:11 2017 +0800
+
+    恢复数据
+
+[33mcommit a37b670fac6e86c8dbcb5a5d0df94820e731d593[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon May 8 14:15:47 2017 +0800
+
+    系统日志----恢恢复功能添加
+
+[33mcommit bb96b7613969703e71103b193f94f56a8d3cd083[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri May 5 18:46:34 2017 +0800
+
+    知识库禁用与启用、知识库搜索框remove按键、情感二极图修改、刷新页面菜单定位
+
+[33mcommit 418fb7d437f85ee9a9953a25d9af43e094ce8f25[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu May 4 18:48:15 2017 +0800
+
+    工作报表数据及页面优化
+
+[33mcommit 468062caee4038f0cad66a12fc2f6f4dc08e0eb7[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed May 3 18:49:51 2017 +0800
+
+    首页数据接后台，工作报表总览优化
+
+[33mcommit ff90a7804608ed43c330cfb85190c4121a81e362[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue May 2 18:28:48 2017 +0800
+
+    统一图表、用户分析总览
+
+[33mcommit 938c3e7735af5c6d60c76d5bf61eb8b8003e7260[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Apr 28 12:23:03 2017 +0800
+
+    假数据3
+
+[33mcommit 8389808b146ed71dbb473dfeea6f423ca84d8a65[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Apr 28 10:19:08 2017 +0800
+
+    验证码bug
+
+[33mcommit bbac3ffd2ca7ee08c932e4039fddbea0984ad655[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Apr 28 09:36:39 2017 +0800
+
+    假数据修改3
+
+[33mcommit ca95c60c4151ff68e5b326bf209b5b80f5064bc2[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Apr 28 09:26:28 2017 +0800
+
+    假数据修改2
+
+[33mcommit 262e11c3f37105c2ac3852e23fa6b154969be24b[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Fri Apr 28 09:21:33 2017 +0800
+
+    假数据修改
+
+[33mcommit 79bee83bb7ce599102e8ba21f8dcaa8eb5b62f32[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Apr 27 21:09:07 2017 +0800
+
+    字体颜色
+
+[33mcommit 2e557dd980f5e41594fb0d0dc5a5103f0093b5c2[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Apr 27 20:54:54 2017 +0800
+
+    主页、报表---图标假数据
+
+[33mcommit 0e060358268e6ef67fff4d6f52fd28886bc09ffa[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Apr 27 19:29:33 2017 +0800
+
+    build
+
+[33mcommit f5149e1d7e97e875ce0d7252dfd5a1cacb694ca1[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Apr 27 19:23:39 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit a0a4d985d68e7d986eed167edcfd27784c4bbd64[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Apr 26 18:56:52 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit c6a127a8d4470ad0511c24fc7afd2746c9a4f988[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 25 18:48:03 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit a75bd9a255604f478931ae934cce570df08dc155[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Mon Apr 24 18:29:18 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 607171b0694f45e1afa4731f8d11d282c358cf91[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Apr 20 14:59:11 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 4ef8c7873b123ce7c25055d0eb5653bb6be0fa7b[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Apr 20 14:17:23 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 5123e5ae7419c9ba4da6abe1ab1162668cf1e235[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Thu Apr 20 14:04:50 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit f8f587ca8e59e31e4a029ec5faa121b2f5577187[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Apr 19 19:53:49 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 2a084335b59f8688fbea275c8e356805a17fc53c[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Apr 19 19:33:47 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 5b1f4f8a7e21401e4b45738120b1f6a10ec784de[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Apr 19 17:59:14 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 588bc5491cd37f0089bf61f57b4f62d8aedaa587[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Apr 19 17:57:24 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 3ccb4c0b8e048b1e3df82c39e859eed034e1369d[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Apr 19 15:29:17 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit 5a2852093e33adf1af848de1dcc82b53b5e0921f[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Wed Apr 19 11:49:21 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit bc0762ace530f054a6a28c52db8b748026502065[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 18:29:04 2017 +0800
+
+    Signed-off-by: lijianhui <jianhuili@webot.co>
+
+[33mcommit ed942d86f9a5e45f40ea195dd62a42f02d277a65[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 14:45:11 2017 +0800
+
+    修改下载文件
+
+[33mcommit 94318b3f1869a5cba32cdf77b0cca69b4afd4972[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 14:08:11 2017 +0800
+
+    bug
+
+[33mcommit 9f17e6ce96d31522d0ce32788327e325c938e291[m
+Merge: 05e996b c6d5c2b
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 12:17:24 2017 +0800
+
+    Merge branch 'master' of http://192.168.3.101/jianglinlin/data-admin-ui
+
+[33mcommit 05e996bb792b6a36fc78f2025c28e601f9db3149[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 12:15:17 2017 +0800
+
+    fix
+
+[33mcommit 6db2216f516775e68d8900d3de63e98dee5774a9[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 10:32:08 2017 +0800
+
+    v1.0
+
+[33mcommit c6d5c2b56479f210ad8f60d73cc6a148a6afe750[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 06:11:07 2017 +0800
+
+    Replace dist.zip
+
+[33mcommit e6279fcc5dddc60d5b64ddcd4d70e8209c2d708a[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 06:08:24 2017 +0800
+
+    Upload new file
+
+[33mcommit a654cce16247c6c31e7aa659fcaf0bfc68156376[m
+Author: lijianhui <jianhuili@webot.co>
+Date:   Tue Apr 18 06:07:25 2017 +0800
+
+    Delete dist.zip

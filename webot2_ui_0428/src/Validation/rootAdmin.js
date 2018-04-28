@@ -1,0 +1,36 @@
+export default {
+    domain:{
+        required:1,
+        type:'string',
+        name:'域名',
+    },
+    /*similar_word:{
+        required:0,
+        type:'array',
+        type_arr:'string',
+        RegExp:"[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？%+_]",
+        RegExp_err:'不能包含特殊字符',
+        name:'相似词',
+    }*/
+    email:{
+        required:0,
+        type:'email',
+        name:'邮箱'
+    },
+    mobile:{
+        required:0,
+        type:'mobile',
+        name:'手机号码'
+    },
+    name:{
+        required:1,
+        type:'string',
+        type_arr:'string',
+        name:'公司名称'
+    },
+    password:{
+        required:1,
+        type:'password',
+        name:'密码'
+    }
+}

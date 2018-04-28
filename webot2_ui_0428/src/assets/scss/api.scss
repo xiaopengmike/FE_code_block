@@ -1,0 +1,23 @@
+@mixin simulateTableThWidth($th_widths,$has_select:false) {
+    @if $has_select {
+        .th,.td {
+            @for $i from 1 through length($th_widths) {
+                &:nth-child(#{$i+1}) {width:calc(#{percentage(nth($th_widths,$i))} - #{nth($th_widths,$i) * 38px}); }
+            }
+        }
+    }
+    @else{
+        .th,.td {
+            @for $i from 1 through length($th_widths) {
+                &:nth-child(#{$i}) {width:percentage(nth($th_widths,$i)); }
+            }
+        }
+    }
+    .tfoot{
+        .td{
+            &:nth-child(1) { width:calc(#{percentage(nth($th_widths,1))} + 38px); }
+            &:nth-child(2) {width:calc(#{100% - percentage(nth($th_widths,1))} - 38px );}
+        }
+    }
+}
+

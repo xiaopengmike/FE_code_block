@@ -1,0 +1,96 @@
+@charset "GBK";
+/* CSS Document */
+body, td, input, select, textarea, h1, h2, h3, h4, h5, h6{ font-size:14px;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0; padding:0;}
+ul, ol{ list-style:none;}
+img{border:0; }
+input,select,textarea{vertical-align:middle;}
+input{outline:none} 
+
+
+ul.hastype{list-style:decimal;}
+ol.hastype{list-style:circle;}
+
+a{ text-decoration:none; color:#000;}
+.clearfix:after{ visibility: hidden; display: block; font-size: 0; content: ""; clear: both; height: 0; }  
+.clearfix{*zoom: 1;}
+
+body,html {width:100%; height:100%;}
+
+input[type="checkbox"] {margin-top:0;}
+label {font-weight:normal;}
+
+
+
+.red {color:red;}
+.limegreen {color:limegreen;}
+.pointer {cursor: pointer;}
+.not-allowed {cursor: not-allowed;}
+.margin-auto {margin:auto;}
+
+
+.font12 {font-size:12px;;}
+.font13 {font-size:13px;;}
+.font14 {font-size:14px;;}
+.font15 {font-size:15px;;}
+.font16 {font-size:16px;;}
+.font17 {font-size:17px;;}
+.font18 {font-size:18px;;}
+.font19 {font-size:19px;;}
+.font20 {font-size:20px;;}
+.font24 {font-size:24px;;}
+.font22 {font-size:22px;;}
+.font26 {font-size:26px;;}
+.font28 {font-size:28px;;}
+.font20 {font-size:20px;;}
+.font50 {font-size:50px;;}
+
+.opcity2{opacity:0.2;}
+.opcity5{opacity:0.5;}
+.opcity9{opacity:0.9;}
+
+.padd_l_10 {padding-left:10px;}
+.padd_l_30 {padding-left:30px;}
+.marg_l_10 {margin-left:10px;}
+.marg_b_10 {margin-bottom:10px;}
+
+.c_c1cfdf {color:#c1cfdf;}
+.c_13a0e3 {color:#13a0e3;}
+.c_c4d0dd {color:#c4d0dd;}
+.c_999 {color:#999;}
+
+.disabled {color: #bbb;}
+.ps {color:#c1cfdf; }
+
+.table2 {width:100%; font-size:14px;;}
+.table2 th {font-size:14px; font-weight:normal; padding:10px 0;}
+.table2 tbody tr:nth-child(odd) {background:#eff6fe;}
+.table2 tbody tr:nth-child(even) {background:#f8fbff;}
+.table2 tbody tr td {padding:10px 0;}
+.table2 tbody tr td:first-child, .table2 th:first-child{padding-left:15px;;}
+.table2 tbody tr.on{background:#d5e3f3;} 
+.table2 tbody tr:hover{background:#deeaf8}
+
+.unselect {-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+.no-decoration {text-decoration: none;}
+
+.vertical-center {display:table-cell;vertical-align: middle;}
+
+.unable{background-color: #F5F5F5;color:#ACA899;}
+.explain {color:#ccc;}
+
+.displayIB {display:inline-block;}
+
+
+.el-date-editor--daterange.el-input.el-date-editor {width:267px;}
+@media only screen and (min-width:1250px ) {
+	.col-1250-5-1 {display: inline-block; width:20%;padding-right: 15px;padding-left: 15px;float: left;}
+}
+
+@media only screen and (min-width:1200px ) {
+	.col-lg-5-1 {display: inline-block; width:20%;padding-right: 15px;padding-left: 15px;float: left;}
+}
+@media only screen and (min-width:992px ) {
+	.col-md-5-1 {display: inline-block; width:20%;padding-right: 15px;padding-left: 15px;float: left;}
+}

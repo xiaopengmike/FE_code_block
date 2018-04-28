@@ -1,0 +1,21 @@
+export default {
+	id:{
+		required:0,
+		type:'number',
+	},
+	word:{
+		required:1,
+		type:'string',
+		RegExp:"^([`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？%+_])",
+		RegExp_err:'不能包含特殊字符',
+		name:'标准词',
+	},
+	similar_word:{
+		required:0,
+		type:'array_repeat',
+		type_arr:'string',
+		RegExp:"^([`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？%+_])",
+		RegExp_err:'不能包含特殊字符',
+		name:'同义词',
+	}
+}

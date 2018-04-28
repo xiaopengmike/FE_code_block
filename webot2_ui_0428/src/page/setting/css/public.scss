@@ -1,0 +1,99 @@
+/*
+会话分配设置
+满意度设置
+会话超时设置
+*/
+/* 新版样式 */
+/*.session-allocation-main,
+.satisfaction-main,
+.session-timeout-main {
+    height: 100%;
+    position: relative;
+
+    &>h2 {
+        margin: 0 40px;
+        width: calc(100% - 80px);
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .content {
+        padding: 20px 60px;
+        font-size: 14px;
+        max-height: calc(100% - 118px);
+        overflow: auto;
+
+        .switch-text {
+            margin-bottom: 10px;
+
+            span {
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+
+        p.tips {
+            color: #b7bec6;
+            margin-bottom: 20px;
+        }
+    }
+
+    .btn-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 80px;
+        line-height: 80px;
+        border-top: 1px solid #e5e5e5;
+        text-align: right;
+        padding: 0 50px;
+
+        button {
+            width: 100px;
+        }
+    }
+}*/
+/* 原来样式 */
+.session-allocation-main,
+.satisfaction-main,
+.session-timeout-main {
+    height: 100%;
+    overflow: auto;
+
+    &>h2 {
+        margin: 0 40px;
+        width: calc(100% - 80px);
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .content {
+        padding: 20px 60px;
+        font-size: 14px;
+
+        .switch-text {
+            margin-bottom: 10px;
+
+            span {
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+
+        p.tips {
+            color: #b7bec6;
+            margin-bottom: 20px;
+        }
+    }
+
+    .btn-box {
+        padding: 0 50px;
+
+        button {
+            width: 100px;
+
+            &:first-child {
+                display: none;
+            }
+        }
+    }
+}

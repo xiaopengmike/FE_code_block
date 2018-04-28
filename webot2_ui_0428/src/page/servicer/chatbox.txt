@@ -1,0 +1,280 @@
+<div id="community_area">
+							<!--<div class="infos text-center"><p class="notmore"><span>已经没有更多了</span></p></div>
+							<div class="infos text-center opcity5"><p>昨天15:55:10用户进入</p></div>
+							<div class="infos text-center opcity5"><p>由主管接待</p></div>
+							<div class="guest tell">
+								<span class="icon"></span>
+								<div class="content">
+									<div class="txt">我就想报警一下而已</div>
+									<p>15:10:10</p>
+								</div>
+								<b><i class="loading"></i></b>
+							</div>
+							<div class="servicer tell">
+								<b><i class="warn"></i></b>
+								<div class="content">
+									<div class="txt">我就想报警一下而已</div>
+									<p>15:10:10</p>
+								</div>
+								<span class="icon"><img src="../../assets/img/bot.png" /> </span>
+							</div>
+							
+							<div class="guest tell">
+								<span class="icon"></span>
+								<div class="content">
+									<div class="img"><img src="../../assets/img/loading_middle.gif" /></div>
+									<p>15:10:10</p>
+								</div>
+								<b><i class="warn"></i></b>
+							</div>
+							<div class="servicer tell">
+								<b><i class="warn"></i></b>
+								<div class="content">
+									<div class="img"><img src="../../assets/img/logo4.png" /></div>
+									<p>15:10:10</p>
+								</div>
+								<span class="icon"><img src="../../assets/img/bot.png" /> </span>
+							</div>
+							
+							<div class="guest tell">
+								<span class="icon"></span>
+								<div class="content">
+									<div class="file">
+										<div class="file_icon"></div>
+										<div>
+											<p>万恶之源.jpg</p>
+											<p><b><i></i></b></p>
+										</div>
+									</div>
+									<p>15:10:10</p>
+								</div>
+								<b><i class="warn"></i></b>
+							</div>
+							<div class="servicer tell">
+								<b><i class="warn"></i></b>
+								<div class="content">
+									<div class="file">
+										<div class="file_icon"></div>
+										<div>
+											<p>万恶之源.jpg</p>
+											<p><span>104.5kb</span>&emsp;<a href="" class="pull-right">下载</a></p>
+										</div>
+									</div>
+									<p>15:10:10</p>
+								</div>
+								<span class="icon"><img src="../../assets/img/bot.png" /> </span>
+							</div>
+							<div class="infos text-center"><p class="history"><span>以上为历史消息</span></p></div>-->
+							
+							<template v-for="(c,i) in sessions[current].historys">
+								<!--<div v-if="c.question!=''&&c.question!=undefined" class="guest tell">
+									<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+									<div class="content">
+										<div v-html="c.question"></div>
+										<p>{{c.time.slice(10)}}</p>
+									</div>
+								</div>
+								<div v-if="c.answer!=''&&c.answer!=undefined" class="servicer tell">
+									<div class="content">
+										<div v-html="c.answer"></div>
+										<p>{{c.time.slice(10)}}</p>
+									</div>
+									<span class="icon"><img src="../../assets/img/bot.png" /></span>
+								</div>
+								<div v-if="c.info || c.times || c.event" class="infos text-center opcity5">
+									<p v-if="c.info" class="infos">{{c.info}}</p>
+									<p v-if="c.times" class="times">{{c.times}}</p>
+									<p v-if="c.event" class="times">{{c.time}}&emsp;{{c.event}}</p>
+								</div>-->
+								<div v-if="c.msg_type=='info'">
+									<p v-if="c.info" class="infos">{{c.info}}</p>
+									<p v-if="c.times" class="times">{{c.times}}</p>
+								</div>
+								<div v-if="c.msg_type=='event'">
+									<p>{{c.time}}&emsp;{{c.text}}</p>
+								</div>
+								<template v-if="c.msg_type=='text'">
+									<div v-if="c.from=='kf'"  class="servicer tell">
+										<b><i class=""></i></b>
+										<div class="content">
+											<div class="txt" v-html="c.text"></div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<span class="icon"><img src="../../assets/img/bot.png" /></span>
+									</div>
+									<div v-if="c.from=='user'" class="guest tell">
+										<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+										<div class="content">
+											<div class="txt" v-html="c.text"></div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<b><i class=""></i></b>
+									</div>
+								</template>
+								<template v-if="c.msg_type=='image'">
+									<div v-if="c.from=='kf'"  class="servicer tell">
+										<b><i class=""></i></b>
+										<div class="content">
+											<div class="img">
+												<img v-if="c.media.url===''" src="../../assets/img/loading_middle.gif"  />
+												<img v-if="c.media.url===false" src="../../assets/img/bad_img.png" @click="reupload(c.media.file)" />
+												<img v-if="c.media.url" :src="c.media.url" @click="enlargement(c.media.url)" />
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<span class="icon"><img src="../../assets/img/bot.png" /></span>
+									</div>
+									<div v-if="c.from=='user'" class="guest tell">
+										<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+										<div class="content">
+											<div class="img">
+												<img v-if="c.media.url===''" src="../../assets/img/loading_middle.gif"  />
+												<img v-if="c.media.url===false" src="../../assets/img/bad_img.png" @click="reupload(c.media.file)" />
+												<img v-if="c.media.url" :src="c.media.url" @click="enlargement(c.media.url)" />
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<b><i class=""></i></b>
+									</div>
+								</template>
+								<template v-if="c.msg_type=='file'">
+									<div v-if="c.from=='kf'"  class="servicer tell">
+										<b><i class=""></i></b>
+										<div class="content">
+											<div class="file">
+												<div class="file_icon"></div>
+												<div>
+													<p>{{c.media.name}}</p>
+													<p>
+														<span v-if="c.media.progress==100">{{(c.media.size/1024).toFixed(2)}}kb</span>&emsp;<a :href="c.media.url"  target="_self" :download="c.media.name" class="pull-right">下载</a>
+														<b v-if="c.media.progress!=100"><i :style="'width:'+c.media.progress+'%'"></i></b>
+													</p>
+												</div>
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<span class="icon"><img src="../../assets/img/bot.png" /></span>
+									</div>
+									<div v-if="c.from=='user'" class="guest tell">
+										<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+										<div class="content">
+											<div class="file">
+												<div class="file_icon"></div>
+												<div>
+													<p>{{c.media.name}}</p>
+													<p>
+														<span v-if="c.media.progress==100">{{(c.media.size/1024).toFixed(2)}}kb</span>&emsp;<a :href="c.media.url"  target="_self" :download="c.media.name" class="pull-right">下载</a>
+														<b v-if="c.media.progress!=100"><i :style="'width:'+c.media.progress+'%'"></i></b>
+													</p>
+												</div>
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<b><i class=""></i></b>
+									</div>
+								</template>
+							</template>
+							<template v-for="(c,i) in sessions[current].tell">
+								<!--<div v-if="c.question!=''&&c.question!=undefined" class="guest tell">
+									<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+									<div class="content">
+										<div v-html="c.question"></div>
+										<p>{{c.time.slice(10)}}</p>
+									</div>
+								</div>
+								<div v-if="c.answer!=''&&c.answer!=undefined" class="servicer tell">
+									<div class="content">
+										<div v-html="c.answer"></div>
+										<p>{{c.time.slice(10)}}</p>
+									</div>
+									<span class="icon"><img src="../../assets/img/bot.png" /></span>
+								</div>
+								<div v-if="c.info || c.times" class="infos text-center">
+									<p v-if="c.info" class="infos">{{c.info}}</p>
+									<p v-if="c.times" class="times">{{c.times}}</p>
+								</div>-->
+								<div v-if="c.msg_type=='event'">
+									<p>{{c.time}}&emsp;{{c.text}}</p>
+								</div>
+								<template v-if="c.msg_type=='text'">
+									<div v-if="c.from=='kf'"  class="servicer tell">
+										<b><i :class="c.send==0?'loading':(c.send==-1?'warn':'')"></i></b>
+										<div class="content">
+											<div class="txt" v-html="c.text"></div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<span class="icon"><img src="../../assets/img/bot.png" /></span>
+									</div>
+									<div v-if="c.from=='user'" class="guest tell">
+										<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+										<div class="content">
+											<div class="txt" v-html="c.text"></div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<b><i class=""></i></b>
+									</div>
+								</template>
+								<template v-if="c.msg_type=='image'">
+									<div v-if="c.from=='kf'"  class="servicer tell">
+										<b><i  :class="c.send==0?'loading':(c.send==-1?'warn':'')"></i></b>
+										<div class="content">
+											<div class="img">
+												<img v-if="c.media.url===''" src="../../assets/img/loading_middle.gif"  />
+												<img v-if="c.media.url===false" src="../../assets/img/bad_img.png" @click="reupload(c.media.file)" />
+												<img v-if="c.media.url" :src="c.media.url" @click="enlargement(c.media.url)" />
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<span class="icon"><img src="../../assets/img/bot.png" /></span>
+									</div>
+									<div v-if="c.from=='user'" class="guest tell">
+										<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+										<div class="content">
+											<div class="img">
+												<img v-if="c.media.url===''" src="../../assets/img/loading_middle.gif"  />
+												<img v-if="c.media.url===false" src="../../assets/img/bad_img.png" @click="reupload(c.media.file)" />
+												<img v-if="c.media.url" :src="c.media.url" @click="enlargement(c.media.url)" />
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<b><i class=""></i></b>
+									</div>
+								</template>
+								<template v-if="c.msg_type=='file'">
+									<div v-if="c.from=='kf'"  class="servicer tell">
+										<b><i :class="c.send==0?'loading':(c.send==-1?'warn':'')"></i></b>
+										<div class="content">
+											<div class="file">
+												<div class="file_icon"></div>
+												<div>
+													<p>{{c.media.name}}</p>
+													<p>
+														<span v-if="c.media.progress==100">{{(c.media.size/1024).toFixed(2)}}kb&emsp;<a :href="c.media.url"  target="_self" :download="c.media.name" class="pull-right">下载</a></span>
+														<b v-if="c.media.progress!=100"><i :style="'width:'+c.media.progress+'%'"></i></b>
+													</p>
+												</div>
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<span class="icon"><img src="../../assets/img/bot.png" /></span>
+									</div>
+									<div v-if="c.from=='user'" class="guest tell">
+										<span class="icon">{{sessions[current].session_id.slice(-2)}}</span>
+										<div class="content">
+											<div class="file">
+												<div class="file_icon"></div>
+												<div>
+													<p>{{c.media.name}}</p>
+													<p>
+														<span v-if="c.media.progress==100">{{(c.media.size/1024).toFixed(2)}}kb</span>&emsp;<a :href="c.media.url"  target="_self" :download="c.media.name" class="pull-right">下载</a>
+														<b v-if="c.media.progress!=100"><i :style="'width:'+c.media.progress+'%'"></i></b>
+													</p>
+												</div>
+											</div>
+											<p>{{c.time.slice(10)}}</p>
+										</div>
+										<b><i class=""></i></b>
+									</div>
+								</template>
+							</template>
+						</div>

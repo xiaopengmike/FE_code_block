@@ -1,0 +1,51 @@
+$q:#343f4b;
+$a:#9e9e9e;
+.qa {
+    padding:7px 0 0;
+    font-size:14px;
+    .q {
+        position:relative;
+        line-height:27px;
+        height:27px;
+    }
+    .tragger_q {
+        height:17px;
+    }
+    .index{
+        display:inline-block;
+        vertical-align:top;
+    }
+    p{
+        color:$q;
+        display:inline-block;
+        max-width:calc(100% - 70px);
+        overflow-x:hidden;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;
+    }
+    .submit {
+        position:absolute;
+        right:0;top:0;
+    }
+    .a_wrap{
+        height:64px; 
+        border-bottom:1px solid #eee;
+        position:relative;
+    }
+    .a {
+        color:$a;
+        margin-left: 15px;
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height:18px;
+        max-height:64px;
+    }
+}
+.qa_detail {
+    max-width:300px;
+    .a{
+        padding-top:7px;
+        line-height:18px;
+    }
+}
