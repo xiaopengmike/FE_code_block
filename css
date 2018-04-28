@@ -1,0 +1,9 @@
+  //文字宽度超过隐藏，显示'..'
+  .classify01_h3{
+    display: inline-block;
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
